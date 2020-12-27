@@ -1,6 +1,6 @@
-import { LitElement, html } from 'lit-element';
+import { LitElement, html, css } from 'lit-element';
 
-import './views/header'
+import './components/header'
 
 class LandingApp extends LitElement {
 
@@ -13,4 +13,4 @@ class LandingApp extends LitElement {
     }
 }
 
-customElements.define('landing-app', LandingApp);
+customElements.define('l-app', LandingApp);

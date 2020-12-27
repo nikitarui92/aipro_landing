@@ -1,6 +1,6 @@
 import { LitElement, html } from 'lit-element';
 
-class HeaderView extends LitElement {
+class Header extends LitElement {
   render() {
     return html`
         <div class="container">
@@ -15,4 +15,4 @@ class HeaderView extends LitElement {
   }
 }
 
-customElements.define('l-header', HeaderView);
+customElements.define('l-header', Header);
