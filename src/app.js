@@ -1,14 +1,18 @@
-import { LitElement, html, css } from 'lit-element';
+import { LitElement, html } from 'lit-element';
+
+import {BaseElement} from './base-element'
 
 import './components/header'
 
-class LandingApp extends LitElement {
+class LandingApp extends BaseElement {
+
+    static get styles() {
+        return [super.styles]
+    }
 
     render() {
         return html`
-        <section class="section">
-            <l-header></l-header>
-        <section>
+        <l-header></l-header>
     `;
     }
 }
