@@ -1,4 +1,4 @@
-import { LitElement, html } from 'lit-element';
+import { html, css } from 'lit-element';
 
 import { BaseElement } from '../base-element'
 
@@ -10,22 +10,26 @@ class Header extends BaseElement {
 
   render() {
     return html`
-        <nav class="level">
-          <p class="level-item has-text-centered">
-            <a class="link is-info">Home</a>
-          </p>
-          <p class="level-item has-text-centered">
-            <a class="link is-info">Menu</a>
-          </p>
-          <p class="level-item has-text-centered">
-            <strong>aipro</strong>
-          </p>
-          <p class="level-item has-text-centered">
-            <a class="link is-info">Reservations</a>
-          </p>
-          <p class="level-item has-text-centered">
-            <a class="link is-info">Contact</a>
-          </p>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="https://bulma.io">
+              <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+            </a>
+        
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                Contact
+              </div>
+            </div>
+          </div>
         </nav>
     `;
   }
