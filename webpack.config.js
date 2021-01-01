@@ -1,9 +1,9 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpackMerge = require('webpack-merge');
+const {merge: webpackMerge} = require('webpack-merge');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const modeConfig = env => require(`./build-utils/webpack.${env.mode}.js`)(env);
 
@@ -12,18 +12,15 @@ const webcomponentsjs = './node_modules/@webcomponents/webcomponentsjs';
 const polyfills = [
   {
     from: resolve(`${webcomponentsjs}/webcomponents-*.{js,map}`),
-    to: 'vendor',
-    flatten: true
+    to: 'vendor/[name].[ext]',
   },
   {
     from: resolve(`${webcomponentsjs}/bundles/*.{js,map}`),
-    to: 'vendor/bundles',
-    flatten: true
+    to: 'vendor/bundles/[name].[ext]',
   },
   {
     from: resolve(`${webcomponentsjs}/custom-elements-es5-adapter.js`),
-    to: 'vendor',
-    flatten: true
+    to: 'vendor/[name].[ext]',
   }
 ];
 
@@ -35,7 +32,9 @@ const assets = [
 ];
 
 const plugins = [
-  new CleanWebpackPlugin(['dist']),
+  new CleanWebpackPlugin({
+    cleanOnceBeforeBuildPatterns: ['dist'],
+  }),
   new webpack.ProgressPlugin(),
   new HtmlWebpackPlugin({
     filename: 'index.html',
@@ -46,12 +45,19 @@ const plugins = [
       minifyJS: true
     }
   }),
-  new CopyWebpackPlugin([...polyfills, ...assets], {
-    ignore: ['.DS_Store']
-  })
+  new CopyWebpackPlugin(
+    {
+      patterns: [
+        ...polyfills,
+        ...assets,
+      ],
+    },
+  ),
 ];
 
-module.exports = ({ mode, presets }) => {
+module.exports = (argv, env) => {
+  const {mode} = env
+
   return webpackMerge(
     {
       mode,
@@ -81,6 +87,6 @@ module.exports = ({ mode, presets }) => {
       },
       plugins
     },
-    modeConfig({ mode, presets }),
+    modeConfig({ mode }),
   );
 };

@@ -1,10 +1,12 @@
-import { LitElement } from 'lit-element';
-import {bulmaStyles} from '@granite-elements/granite-lit-bulma/granite-lit-bulma.js';
+import { LitElement, css, unsafeCSS } from 'lit-element';
+import styleAsString from './styles.scss';
 
 export class BaseElement extends LitElement {
 
     static get styles() {
-        return [bulmaStyles]
+        return [
+            unsafeCSS(styleAsString.toString())
+        ]
     }
 
 }
