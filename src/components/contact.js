@@ -1,17 +1,27 @@
-import { html } from 'lit-element';
+import { html, unsafeCSS } from 'lit-element';
 
 import { BaseElement } from '../base-element'
+import styles from './contact.scss'
 
 class Contact extends BaseElement {
+
+    static get styles() {
+        return [
+            unsafeCSS(styles.toString())
+        ]
+    }
 
     render() {
         return html`
         <section class="hero">
+            <div class="container">
+                <h1 class="title">
+                    Контакты
+                </h1>
+            </div>
             <div class="hero-body">
                 <div class="container">
                     <div class="columns">
-                        <div class="column"></div>
-                        <div class="column"></div>
                         <div class="column">
                             <div class="card">
                                 <div class="card-image">
@@ -21,33 +31,26 @@ class Contact extends BaseElement {
                                 </div>
                                 <div class="card-content">
                                     <div class="media">
-                                        <div class="media-left">
-                                            <figure class="image is-48x48">
-                                                <img src="https://bulma.io/images/placeholders/96x96.png"
-                                                    alt="Placeholder image">
-                                            </figure>
-                                        </div>
                                         <div class="media-content">
-                                            <p class="title is-4">John Smith</p>
-                                            <p class="subtitle is-6">@johnsmith</p>
+                                            <p class="title is-4">Никита Захаров</p>
+                                            <p class="subtitle is-6">@nikitarui</p>
                                         </div>
                                     </div>
         
                                     <div class="content">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                                        <a href="#">#css</a> <a href="#">#responsive</a>
-                                        <br>
-                                        <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                                        Гомогенная среда стабилизирует гидродинамический удар даже в случае сильных
+                                        локальных
+                                        возмущений среды.
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="column">
-        
-                        </div>
+                        <div class="column"></div>
+                        <div class="column"></div>
+                        <div class="column"></div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     `;

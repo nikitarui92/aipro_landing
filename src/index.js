@@ -1,2 +1,2 @@
-import 'style-loader!./app-styles.scss'
+import 'style-loader!./app.scss'
 import './app'

@@ -20,7 +20,7 @@ class Header extends BaseElement {
           </div>
         
           <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-end has-text-weight-bold is-size-4">
+            <div class="navbar-end has-text-weight-bold is-size-5">
               <a class="navbar-item">
                 Проекты 🧠
               </a>
@@ -30,7 +30,7 @@ class Header extends BaseElement {
               <a class="navbar-item">
                 Команда 💪
               </a>
-              <a class="navbar-item">
+              <a href="#contact" class="navbar-item">
                 Контакты 📞
               </a>
             </div>
