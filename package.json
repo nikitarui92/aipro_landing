@@ -4,7 +4,7 @@
   "description": "Landing Page",
   "scripts": {
     "webpack": "webpack",
-    "webpack-dev-server": "webpack serve --port=8081",
+    "webpack-dev-server": "webpack serve --port=8081 --host=0.0.0.0",
     "prod": "npm run webpack -- --mode=production",
     "dev": "npm run webpack-dev-server -- --mode=development"
   },

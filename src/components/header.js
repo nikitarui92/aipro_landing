@@ -4,23 +4,12 @@ import { BaseElement } from '../base-element'
 
 class Header extends BaseElement {
 
-  static get styles() {
-    return [
-      css`
-        #logo {
-          user-select: none;
-        }
-      `,
-      super.styles
-    ]
-  }
-
   render() {
     return html`
-        <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-spaced has-shadow" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
-            <div id="logo" class="navbar-item is-size-3" href="#">
-              <strong>aipro</strong>
+            <div class="navbar-item is-unselectable" href="#">
+              <p class="has-text-weight-bold is-size-2">aipro</p>
             </div>
         
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -31,15 +20,18 @@ class Header extends BaseElement {
           </div>
         
           <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-end">
+            <div class="navbar-end has-text-weight-bold is-size-4">
               <a class="navbar-item">
-                Проекты
+                Проекты 🧠
               </a>
               <a class="navbar-item">
-                Кейсы
+                Кейсы 🧰
               </a>
               <a class="navbar-item">
-                Контакты
+                Команда 💪
+              </a>
+              <a class="navbar-item">
+                Контакты 📞
               </a>
             </div>
           </div>
