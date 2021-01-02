@@ -1,5 +1,5 @@
 import { LitElement, css, unsafeCSS } from 'lit-element';
-import styleAsString from './styles.scss';
+import styleAsString from './base-styles.scss';
 
 export class BaseElement extends LitElement {
 

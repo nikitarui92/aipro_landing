@@ -77,7 +77,8 @@ module.exports = (argv, env) => {
                   '@babel/preset-env',
                   {
                     useBuiltIns: 'usage',
-                    targets: '>1%, not dead, not ie 11'
+                    targets: '>1%, not dead, not ie 11',
+                    corejs: { version: 3, proposals: true }
                   }
                 ]
               ]

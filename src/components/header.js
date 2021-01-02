@@ -17,7 +17,7 @@ class Header extends BaseElement {
 
   render() {
     return html`
-        <nav class="navbar" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-spaced" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <div id="logo" class="navbar-item is-size-3" href="#">
               <strong>aipro</strong>
@@ -33,7 +33,13 @@ class Header extends BaseElement {
           <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
               <a class="navbar-item">
-                Contact
+                Проекты
+              </a>
+              <a class="navbar-item">
+                Кейсы
+              </a>
+              <a class="navbar-item">
+                Контакты
               </a>
             </div>
           </div>
