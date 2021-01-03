@@ -1,10 +1,16 @@
 
 
-import { html } from 'lit-element';
+import { html, unsafeCSS } from 'lit-element';
 
 import { BaseElement } from '../base-element'
 
+import styles from './card.scss'
+
 class Card extends BaseElement {
+
+    static get styles() {
+        return unsafeCSS(styles.toString())
+    }
 
     static get properties() {
         return {

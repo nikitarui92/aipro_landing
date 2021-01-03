@@ -27,7 +27,7 @@ class Header extends BaseElement {
               <a class="navbar-item">
                 Кейсы 🧰
               </a>
-              <a class="navbar-item">
+              <a href="#team" class="navbar-item">
                 Команда 💪
               </a>
               <a href="#contact" class="navbar-item">
