@@ -8,14 +8,14 @@ class Card extends BaseElement {
 
     static get properties() {
         return {
-            img: {type: String},
-            desc: {type: String},
-            name: {type: String},
-            link: {type: String}
+            img: { type: String },
+            desc: { type: String },
+            fullname: { type: String },
+            link: { type: String }
         }
     }
 
-    constructor(){
+    constructor() {
         super()
         this.img = ''
         this.desc = ''
@@ -35,8 +35,10 @@ class Card extends BaseElement {
                 <div class="media-content">
                     <div class="content">
                         <p>
-                            <strong>${this.fullname}</strong> <small>${this.link}</small>
-                            <br>
+                            <strong>${this.fullname}</strong>
+                            <a href="#"><small>${this.link}</small></a>
+                        </p>
+                        <p>
                             ${this.desc}
                         </p>
                     </div>

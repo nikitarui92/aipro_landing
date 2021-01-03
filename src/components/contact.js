@@ -13,6 +13,30 @@ class Contact extends BaseElement {
         ]
     }
 
+    constructor() {
+        super()
+        this.cards = [
+            {
+                fullname: 'Никита Захаров',
+                img: './img/niki-card.jpg',
+                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
+                link: '@nikitarui'
+            },
+            {
+                fullname: 'Максим Исаеев',
+                img: './img/max-card.jpg',
+                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
+                link: '@undefhero'
+            },
+            {
+                fullname: 'Доналд Трамп',
+                img: './img/max-card.jpg',
+                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
+                link: '@trump'
+            }
+        ]
+    }
+
     render() {
         return html`
         <section class="hero">
@@ -24,12 +48,11 @@ class Contact extends BaseElement {
             <div class="hero-body">
                 <div class="container">
                     <div class="columns">
+                        ${this.cards.map(c => html`
                         <div class="column">
-                            <l-card img="./img/max-card.jpg"></l-card>
+                            <l-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}"></l-card>
                         </div>
-                        <div class="column">
-                            <l-card img="./img/niki-card.jpg"></l-card>
-                        </div>
+                        `)}
                     </div>
                 </div>
             </div>
