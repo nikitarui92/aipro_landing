@@ -5,7 +5,7 @@ import styles from './contact.scss'
 
 import './card'
 
-class Contact extends BaseElement {
+class Team extends BaseElement {
 
     static get styles() {
         return [
@@ -42,7 +42,7 @@ class Contact extends BaseElement {
         <section class="hero">
             <div class="container">
                 <h1 class="title">
-                    Контакты
+                    Команда
                 </h1>
             </div>
             <div class="hero-body">
@@ -63,4 +63,4 @@ class Contact extends BaseElement {
 
 }
 
-customElements.define('l-contact', Contact);
+customElements.define('l-team', Team);

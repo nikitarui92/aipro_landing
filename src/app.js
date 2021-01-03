@@ -4,7 +4,7 @@ import {BaseElement} from './base-element'
 
 import './components/header'
 import './components/main'
-import './components/contact'
+import './components/team'
 
 class LandingApp extends BaseElement {
 
@@ -12,7 +12,7 @@ class LandingApp extends BaseElement {
         return html`
         <l-header></l-header>
         <l-main></l-main>
-        <l-contact></l-contact>
+        <l-team></l-team>
     `;
     }
 }
