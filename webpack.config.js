@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const path = require('path')
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {merge: webpackMerge} = require('webpack-merge');
@@ -33,7 +34,7 @@ const assets = [
 
 const plugins = [
   new CleanWebpackPlugin({
-    cleanOnceBeforeBuildPatterns: ['dist'],
+    cleanOnceBeforeBuildPatterns: ['docs'],
   }),
   new webpack.ProgressPlugin(),
   new HtmlWebpackPlugin({
@@ -62,7 +63,8 @@ module.exports = (argv, env) => {
     {
       mode,
       output: {
-        filename: '[name].[chunkhash:8].js'
+        filename: '[name].[chunkhash:8].js',
+        path: path.resolve(__dirname, 'docs'),
       },
       module: {
         rules: [
