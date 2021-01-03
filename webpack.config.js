@@ -33,9 +33,7 @@ const assets = [
 ];
 
 const plugins = [
-  new CleanWebpackPlugin({
-    cleanOnceBeforeBuildPatterns: ['docs'],
-  }),
+  new CleanWebpackPlugin(),
   new webpack.ProgressPlugin(),
   new HtmlWebpackPlugin({
     filename: 'index.html',
