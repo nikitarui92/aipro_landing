@@ -1,3 +1,12 @@
 
+$card-radius: 1rem;
 
 @import "~bulma/bulma";
+
+a.navbar-item:visited {
+    color: $text
+}
+
+a.navbar-item:hover {
+    color: $link
+}

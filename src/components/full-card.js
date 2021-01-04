@@ -4,7 +4,7 @@ import { html } from 'lit-element';
 
 import { BaseElement } from '../base-element'
 
-class Card extends BaseElement {
+class FullCard extends BaseElement {
 
     static get properties() {
         return {
@@ -46,4 +46,4 @@ class Card extends BaseElement {
     }
 }
 
-customElements.define('l-full-card', Card);
+customElements.define('l-full-card', FullCard);

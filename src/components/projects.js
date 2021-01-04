@@ -1,17 +1,10 @@
 import { html, unsafeCSS } from 'lit-element';
 
 import { BaseElement } from '../base-element'
-import styles from './team.scss'
 
 import './full-card'
 
-class Team extends BaseElement {
-
-    static get styles() {
-        return [
-            unsafeCSS(styles.toString())
-        ]
-    }
+class Project extends BaseElement {
 
     constructor() {
         super()
@@ -107,4 +100,4 @@ class Team extends BaseElement {
 
 }
 
-customElements.define('l-projects', Team);
+customElements.define('l-projects', Project);

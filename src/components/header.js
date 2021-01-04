@@ -2,12 +2,7 @@ import { html, unsafeCSS } from 'lit-element';
 
 import { BaseElement } from '../base-element'
 
-import styles from './header.scss'
 class Header extends BaseElement {
-
-  static get styles() {
-    return unsafeCSS(styles.toString());
-  }
 
   constructor(){
     super()
@@ -54,7 +49,7 @@ class Header extends BaseElement {
             </div>
           </div>
         </nav>
-        
+
     `;
   }
 

@@ -1,17 +1,10 @@
 import { html, unsafeCSS } from 'lit-element';
 
 import { BaseElement } from '../base-element'
-import styles from './team.scss'
 
 import './card'
 
 class Team extends BaseElement {
-
-    static get styles() {
-        return [
-            unsafeCSS(styles.toString())
-        ]
-    }
 
     constructor() {
         super()
