@@ -1,7 +1,7 @@
 import { html, unsafeCSS } from 'lit-element';
 
 import { BaseElement } from '../base-element'
-import styles from './contact.scss'
+import styles from './team.scss'
 
 import './card'
 
