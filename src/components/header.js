@@ -54,6 +54,7 @@ class Header extends BaseElement {
             </div>
           </div>
         </nav>
+        
     `;
   }
 
