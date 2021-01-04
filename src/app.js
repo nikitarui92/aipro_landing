@@ -25,7 +25,7 @@ class LandingApp extends BaseElement {
         return html`
         <l-header></l-header>
         <l-main id="main"></l-main>
-        <l-projects></l-projects>
+        <l-projects id="projects"></l-projects>
         <l-team id="team"></l-team>
         `
     }

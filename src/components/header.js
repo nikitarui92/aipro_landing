@@ -10,11 +10,7 @@ class Header extends BaseElement {
     this.menuItems = [
       {
         text: 'Проекты 🧠',
-        href: '#'
-      },
-      {
-        text: 'Кейсы 🧰',
-        href: '#'
+        href: '#projects'
       },
       {
         text: 'Команда 💪',
@@ -25,9 +21,7 @@ class Header extends BaseElement {
         href: '#contact'
       }
     ]
-
-    console.log(this.menuItems)
-
+    
   }
 
   render() {
