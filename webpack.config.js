@@ -86,7 +86,7 @@ module.exports = (argv, env) => {
           }
         ]
       },
-      plugins
+      plugins: mode === 'development' ? plugins.slice(1) : plugins
     },
     modeConfig({ mode }),
   );

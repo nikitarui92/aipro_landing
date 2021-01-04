@@ -1,8 +1,13 @@
-import { html, css,  } from 'lit-element';
+import { html, unsafeCSS } from 'lit-element';
 
 import { BaseElement } from '../base-element'
 
+import styles from './header.scss'
 class Header extends BaseElement {
+
+  static get styles() {
+    return unsafeCSS(styles.toString());
+  }
 
   constructor(){
     super()
@@ -21,12 +26,12 @@ class Header extends BaseElement {
         href: '#contact'
       }
     ]
-    
+
   }
 
   render() {
     return html`
-        <nav class="navbar is-spaced has-shadow" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-transparent is-spaced has-shadow" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <div class="navbar-item is-unselectable">
               <p class="has-text-link	has-text-weight-bold is-size-2">aipro</p>
@@ -43,7 +48,7 @@ class Header extends BaseElement {
             <div class="navbar-end has-text-weight-bold is-size-5">
               ${this.menuItems.map(m=>
                 html`
-                  <a href="${m.href}" class="navbar-item" @click="${this._onMenuItemClick}">${m.text}</a>
+                  <a href="${m.href}" @click="${this._onMenuItemClick}" class="navbar-item" >${m.text}</a>
                 `
               )}
             </div>

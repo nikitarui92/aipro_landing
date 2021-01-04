@@ -1,0 +1,14 @@
+
+
+
+
+@import "../base-element.scss";
+
+
+a.navbar-item:visited {
+    color: $text
+}
+
+a.navbar-item:hover {
+    color: $link
+}
