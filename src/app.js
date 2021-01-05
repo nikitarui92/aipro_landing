@@ -31,7 +31,7 @@ class App extends BaseElement {
         <l-projects id="projects"></l-projects>
         <l-team id="team"></l-team>
         <l-blackbox></l-blackbox>
-        <l-contact></l-contact>
+        <l-contact id="contact"></l-contact>
         `
     }
 
