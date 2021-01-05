@@ -12,11 +12,11 @@ const webcomponentsjs = './node_modules/@webcomponents/webcomponentsjs';
 
 const polyfills = [
   {
-    from: resolve(`${webcomponentsjs}/webcomponents-*.{js,map}`),
+    from: resolve(`${webcomponentsjs}/webcomponents-*.js`),
     to: 'vendor/[name].[ext]',
   },
   {
-    from: resolve(`${webcomponentsjs}/bundles/*.{js,map}`),
+    from: resolve(`${webcomponentsjs}/bundles/*.js`),
     to: 'vendor/bundles/[name].[ext]',
   },
   {

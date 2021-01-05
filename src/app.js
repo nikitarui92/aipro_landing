@@ -6,8 +6,9 @@ import './components/header'
 import './components/main'
 import './components/projects'
 import './components/team'
+import './components/blackbox'
 
-class LandingApp extends BaseElement {
+class App extends BaseElement {
 
     constructor() {
         super();
@@ -16,7 +17,8 @@ class LandingApp extends BaseElement {
         window.addEventListener('hashchange', function () {
             const hash = location.hash;
             const el = shadowRoot.querySelector(`${hash}`);
-            el.scrollIntoView();
+            if (el)
+                el.scrollIntoView();
         }, false);
 
     }
@@ -27,9 +29,10 @@ class LandingApp extends BaseElement {
         <l-main id="main"></l-main>
         <l-projects id="projects"></l-projects>
         <l-team id="team"></l-team>
+        <l-blackbox></l-blackbox>
         `
     }
 
 }
 
-customElements.define('l-app', LandingApp);
+customElements.define('l-app', App);

@@ -8,7 +8,7 @@ class Main extends BaseElement {
     render() {
         return html`
         <section class="hero">
-            <div class="hero-body mt-4">
+            <div class="hero-body">
                 <div class="container">
                     <div class="columns">
                         <div class="column mt-6">

@@ -28,17 +28,17 @@ class FullCard extends BaseElement {
         return html`
         <div class="card">
             <div class="card-image">
-                <figure class="image is-4by3">
-                <img src="${this.img}" alt="Placeholder image">
+                <figure class="image is-squre">
+                    <img src="${this.img}" alt="Placeholder image">
                 </figure>
             </div>
             <div class="card-content">
                 <div class="media">
-                <div class="media-content">
-                    <p class="title is-4">${this.fullname}</p>
+                    <div class="media-content">
+                        <p class="title is-4">${this.fullname}</p>
+                    </div>
                 </div>
-                </div>
-
+        
                 <div class="content">${this.desc}</div>
             </div>
         </div>

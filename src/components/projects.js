@@ -4,7 +4,7 @@ import { BaseElement } from '../base-element'
 
 import './full-card'
 
-class Project extends BaseElement {
+class Projects extends BaseElement {
 
     constructor() {
         super()
@@ -49,8 +49,8 @@ class Project extends BaseElement {
 
     render() {
         return html`
-        <section class="hero">
-            <div class="container">
+        <section class="hero has-background-light">
+            <div class="container mt-6">
                 <h1 class="title">
                     Проекты
                 </h1>
@@ -60,36 +60,40 @@ class Project extends BaseElement {
                     <div class="tile is-ancestor">
                         <div class="tile is-vertical is-8">
                             <div class="tile">
-                            <div class="tile is-parent">
-                                ${this.cards.slice(0, 1).map(c => html`
-                                <div class="column">
-                                    <l-full-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}"></l-full-card>
+                                <div class="tile is-parent">
+                                    ${this.cards.slice(0, 1).map(c => html`
+                                    <div class="column">
+                                        <l-full-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}">
+                                        </l-full-card>
+                                    </div>
+                                    `)}
                                 </div>
-                                `)}
-                            </div>
-                            <div class="tile is-parent">
-                                ${this.cards.slice(1, 2).map(c => html`
-                                <div class="column">
-                                    <l-full-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}"></l-full-card>
+                                <div class="tile is-parent">
+                                    ${this.cards.slice(1, 2).map(c => html`
+                                    <div class="column">
+                                        <l-full-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}">
+                                        </l-full-card>
+                                    </div>
+                                    `)}
                                 </div>
-                                `)}
-                            </div>
                             </div>
                             <div class="tile is-parent">
                                 ${this.cards.slice(3, 4).map(c => html`
                                 <div class="column">
-                                    <l-full-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}"></l-full-card>
+                                    <l-full-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}">
+                                    </l-full-card>
                                 </div>
                                 `)}
                             </div>
                         </div>
-                            <div class="tile is-parent">
-                                ${this.cards.slice(2, 3).map(c => html`
-                                <div class="column">
-                                    <l-full-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}"></l-full-card>
-                                </div>
-                                `)}
+                        <div class="tile is-parent">
+                            ${this.cards.slice(2, 3).map(c => html`
+                            <div class="column">
+                                <l-full-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}">
+                                </l-full-card>
                             </div>
+                            `)}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,4 +104,4 @@ class Project extends BaseElement {
 
 }
 
-customElements.define('l-projects', Project);
+customElements.define('l-projects', Projects);

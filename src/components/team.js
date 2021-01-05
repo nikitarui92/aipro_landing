@@ -32,7 +32,7 @@ class Team extends BaseElement {
 
     render() {
         return html`
-        <section class="hero">
+        <section class="hero mt-6">
             <div class="container">
                 <h1 class="title">
                     Команда
