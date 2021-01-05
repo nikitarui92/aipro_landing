@@ -21,7 +21,7 @@ class Main extends BaseElement {
                         </div>
                         <div class="column">
                             <figure class="image is-square">
-                                <img src="./img/main4.svg">
+                                <img src="./img/main.svg">
                             </figure>
                         </div>
                     </div>

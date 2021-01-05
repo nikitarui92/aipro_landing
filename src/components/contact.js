@@ -6,44 +6,28 @@ class Contact extends BaseElement {
 
     constructor() {
         super()
-        this.cards = [
-            {
-                fullname: 'Никита Захаров',
-                img: './img/niki-card.jpg',
-                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
-                link: '@nikitarui'
-            },
-            {
-                fullname: 'Максим Исаеев',
-                img: './img/max-card.jpg',
-                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
-                link: '@undefhero'
-            },
-            {
-                fullname: 'Доналд Трамп',
-                img: './img/max-card.jpg',
-                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
-                link: '@trump'
-            }
-        ]
+
     }
 
     render() {
         return html`
-        <section class="hero">
-            <div class="container">
-                <h1 class="title">
-                    Контакты
-                </h1>
-            </div>
+        <section class="hero mt-6">
             <div class="hero-body">
                 <div class="container">
-                    <div class="columns">
-                        ${this.cards.map(c => html`
+                    <div class="columns is-vcentered">
                         <div class="column">
-                            <l-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}"></l-card>
+                            <figure class="image is-square">
+                                <img src="./img/contact.svg">
+                            </figure>
                         </div>
-                        `)}
+                        <div class="column has-text-centered">
+                            <h1 class="title is-spaced">
+                                Мы на связи
+                            </h1>
+                            <h2 class="subtitle">
+                                Телега: 123
+                            </h2>
+                        </div>
                     </div>
                 </div>
             </div>

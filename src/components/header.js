@@ -1,8 +1,19 @@
-import { html, unsafeCSS } from 'lit-element';
+import { html, css } from 'lit-element';
 
 import { BaseElement } from '../base-element'
 
 class Header extends BaseElement {
+
+  static get styles(){
+    return [
+      super.styles,
+      css`
+        #logo {
+          color: #33658A
+        }
+      `
+    ]
+  }
 
   constructor(){
     super()
@@ -29,7 +40,7 @@ class Header extends BaseElement {
         <nav class="navbar is-transparent is-spaced has-shadow" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <div class="navbar-item is-unselectable">
-              <p class="has-text-link	has-text-weight-bold is-size-2">aipro</p>
+              <p id="logo" class="has-text-weight-bold is-size-2">aipro</p>
             </div>
         
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
