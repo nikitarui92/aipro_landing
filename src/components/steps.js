@@ -34,12 +34,14 @@ class Steps extends BaseElement {
                             <span class="steps-marker"></span>
                             <div class="steps-content">
                                 <p class="is-size-4">Обучение модели</p>
+                                <p>На этом этапе происходит самое главное. Мы обучаем модель, которая в дальнейшем будет делать человеческий труд проще. </p>
                             </div>
                         </li>
                         <li class="steps-segment is-active">
                             <span class="steps-marker"></span>
                             <div class="steps-content">
                                 <p class="is-size-4">Получение и применение модели</p>
+                                <p>Вы получаете доступ к модели или удобный API. Мы продолжаем вести ваш проект и постоянно улучшаем модель. </p>
                             </div>
                         </li>
                     </ul>
