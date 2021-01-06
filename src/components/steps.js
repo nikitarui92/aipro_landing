@@ -14,41 +14,33 @@ class Steps extends BaseElement {
                 </h1>
             </div>
             <div class="hero-body">
-                <div class="container has-text-white">
-                    <div class="steps">
-                        <div class="step-item">
-                            <div class="step-marker">
-                                <span class="icon">
-                                    <i class="fa fa-check"></i>
-                                </span>
+                <div class="container has-text-white is-large">
+                    <ul class="steps has-content-centered">
+                        <li class="steps-segment is-active">
+                            <span class="steps-marker is-warning"></span>
+                            <div class="steps-content">
+                                <p class="is-size-4">Постановка гипотезы</p>
                             </div>
-                            <div class="step-details">
-                                <p class="step-title">Постановка гипотезы</p>
+                        </li>
+                        <li class="steps-segment is-active">
+                            <span class="steps-marker"></span>
+                            <div class="steps-content">
+                                <p class="is-size-4">Сбор и анализ данных</p>
                             </div>
-                        </div>
-                        <div class="step-item">
-                            <div class="step-marker"></div>
-                            <div class="step-details">
-                                <p class="step-title">Сбор и анализ данных</p>
+                        </li>
+                        <li class="steps-segment is-active">
+                            <span class="steps-marker"></span>
+                            <div class="steps-content">
+                                <p class="is-size-4">Обучение модели</p>
                             </div>
-                        </div>
-                        <div class="step-item">
-                            <div class="step-marker"></div>
-                            <div class="step-details">
-                                <p class="step-title">Обучение модели</p>
+                        </li>
+                        <li class="steps-segment is-active">
+                            <span class="steps-marker"></span>
+                            <div class="steps-content">
+                                <p class="is-size-4">Получение и применение модели</p>
                             </div>
-                        </div>
-                        <div class="step-item">
-                            <div class="step-marker">
-                                <span class="icon">
-                                    <i class="fa fa-flag"></i>
-                                </span>
-                            </div>
-                            <div class="step-details">
-                                <p class="step-title">Получение и применение модели</p>
-                            </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             </div>
