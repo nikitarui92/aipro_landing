@@ -49,8 +49,8 @@ class Projects extends BaseElement {
 
     render() {
         return html`
-        <section class="hero has-background-light">
-            <div class="container mt-6">
+        <section class="hero has-background-light pt-6">
+            <div class="container">
                 <h1 class="title">
                     Проекты
                 </h1>

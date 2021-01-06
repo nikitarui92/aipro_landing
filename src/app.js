@@ -8,6 +8,7 @@ import './components/projects'
 import './components/team'
 import './components/blackbox'
 import './components/contact'
+import './components/steps'
 
 class App extends BaseElement {
 
@@ -28,6 +29,7 @@ class App extends BaseElement {
         return html`
         <l-header></l-header>
         <l-main id="main"></l-main>
+        <l-steps id="steps"></l-steps>
         <l-projects id="projects"></l-projects>
         <l-team id="team"></l-team>
         <l-blackbox></l-blackbox>

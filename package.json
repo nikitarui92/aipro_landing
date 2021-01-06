@@ -16,6 +16,7 @@
     "babel-loader": "^8.2.2",
     "babel-preset-minify": "^0.5.1",
     "bulma": "^0.9.1",
+    "bulma-steps": "^2.2.1",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^7.0.0",
     "core-js": "^3.8.1",

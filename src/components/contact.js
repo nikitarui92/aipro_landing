@@ -6,12 +6,11 @@ class Contact extends BaseElement {
 
     constructor() {
         super()
-
     }
 
     render() {
         return html`
-        <section class="hero mt-6">
+        <section class="hero">
             <div class="hero-body">
                 <div class="container">
                     <div class="columns is-vcentered">
@@ -21,10 +20,10 @@ class Contact extends BaseElement {
                             </figure>
                         </div>
                         <div class="column has-text-centered">
-                            <h1 class="title is-spaced">
-                                Мы на связи
+                            <h1 class="title is-spaced is-size-1">
+                                Напиши нам
                             </h1>
-                            <h2 class="subtitle">
+                            <h2 class="subtitle is-size-3">
                                 Телега: 123
                             </h2>
                         </div>
