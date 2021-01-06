@@ -2,7 +2,7 @@ import { html } from 'lit-element';
 
 import { BaseElement } from '../base-element'
 
-const mainText = 'Клиентоориентированный подход и глубокая проработка задачи. От сбора данных до анализа и обучения модели машинного обучения.'
+const mainText = 'Клиентоориентированный подход и глубокая проработка задачи, от сбора данных до анализа и обучения модели машинного обучения'
 class Main extends BaseElement {
 
     render() {
