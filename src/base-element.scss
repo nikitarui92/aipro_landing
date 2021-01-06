@@ -3,7 +3,7 @@ $card-radius: 1rem;
 
 @import "~bulma/bulma";
 
-@import "~bulma-steps";
+@import "~bulma-steps-component/bulma-steps.sass";
 
 a.navbar-item:visited {
     color: $text
