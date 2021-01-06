@@ -20,12 +20,14 @@ class Steps extends BaseElement {
                             <span class="steps-marker is-warning"></span>
                             <div class="steps-content">
                                 <p class="is-size-4">Постановка гипотезы</p>
+                                <p>Вы приходите к нам с проблемой. Мы вместе находим решение.</p>
                             </div>
                         </li>
                         <li class="steps-segment is-active">
                             <span class="steps-marker"></span>
                             <div class="steps-content">
                                 <p class="is-size-4">Сбор и анализ данных</p>
+                                <p>Мы используем открытые данные или собираем свои. </p>
                             </div>
                         </li>
                         <li class="steps-segment is-active">
