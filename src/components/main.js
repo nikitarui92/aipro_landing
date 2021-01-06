@@ -2,7 +2,7 @@ import { html } from 'lit-element';
 
 import { BaseElement } from '../base-element'
 
-const mainText = 'Разрыв вращает квазар. Фотон, в первом приближении, масштабирует вихревой электрон. Вселенная упруго стабилизирует фонон, однозначно свидетельствуя о неустойчивости процесса в целом. Квант, как можно показать с помощью не совсем тривиальных вычислений, бифокально концентрирует магнит.'
+const mainText = 'Клиентоориентированный подход и глубокая проработка задачи.'
 class Main extends BaseElement {
 
     render() {
@@ -13,7 +13,7 @@ class Main extends BaseElement {
                     <div class="columns">
                         <div class="column mt-6">
                             <h1 class="title is-spaced is-size-2">
-                                Тема: «Осциллятор как гидродинамический удар»
+                                Решаем бизнес-кейсы с помощью машинного обучения
                             </h1>
                             <h2 class="subtitle is-size-4">
                                 ${mainText}

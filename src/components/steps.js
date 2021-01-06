@@ -6,7 +6,13 @@ class Steps extends BaseElement {
 
     render() {
         return html`
-        <section class="hero has-background-dark px-6">
+        <section class="hero has-background-dark mt-6">
+            <div class="hero-body">
+            <div class="container">
+                <h1 class="title has-text-white has-text-centered">
+                    Этапы проработки задачи
+                </h1>
+            </div>
             <div class="hero-body">
                 <div class="container has-text-white">
                     <div class="steps">
@@ -44,6 +50,7 @@ class Steps extends BaseElement {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
     `;
