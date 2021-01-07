@@ -38,9 +38,7 @@ class Header extends BaseElement {
     return html`
         <nav class="navbar is-transparent is-spaced has-shadow" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
-            <div class="navbar-item is-unselectable">
-              <p id="logo" class="has-text-weight-bold is-size-2">aipro</p>
-            </div>
+            <a href="#" id="logo" class="navbar-item has-text-weight-bold is-size-2">aipro</a>
             <a @click="${this._onNavbarBurgerClick}" role="button" aria-expanded="true" class="navbar-burger" aria-label="menu" data-target="menu">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>

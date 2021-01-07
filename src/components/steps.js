@@ -15,7 +15,7 @@ class Steps extends BaseElement {
                 </div>
             </div>
             <div class="hero-body">
-                <div class="container has-text-white is-large">
+                <div class="container has-text-white">
                     <ul class="steps has-content-centered">
                         <li class="steps-segment is-active">
                             <span class="steps-marker is-warning"></span>
