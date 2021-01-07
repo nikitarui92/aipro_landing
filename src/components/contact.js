@@ -21,10 +21,10 @@ class Contact extends BaseElement {
                         </div>
                         <div class="column has-text-centered">
                             <h1 class="title is-spaced is-size-1">
-                                Напиши нам
+                                Напишите нам
                             </h1>
                             <h2 class="subtitle is-size-3">
-                                Телега: 123
+                                <a href="mailto:webmaster@example.com">mail.com</a>
                             </h2>
                         </div>
                     </div>

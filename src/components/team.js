@@ -32,11 +32,13 @@ class Team extends BaseElement {
 
     render() {
         return html`
-        <section class="hero py-6">
-            <div class="container">
-                <h1 class="title">
-                    Команда
-                </h1>
+        <section class="hero is-medium">
+            <div class="hero-head">
+                <div class="container mt-6">
+                    <h1 class="title has-text-centered">
+                        Команда
+                    </h1>
+                </div>
             </div>
             <div class="hero-body">
                 <div class="container">

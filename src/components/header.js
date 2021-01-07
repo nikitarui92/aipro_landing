@@ -9,7 +9,7 @@ class Header extends BaseElement {
       super.styles,
       css`
         #logo {
-          color: #33658A
+          color: #2a9d8f;
         }
       `
     ]
@@ -32,7 +32,6 @@ class Header extends BaseElement {
         href: '#contact'
       }
     ]
-
   }
 
   render() {
@@ -42,15 +41,14 @@ class Header extends BaseElement {
             <div class="navbar-item is-unselectable">
               <p id="logo" class="has-text-weight-bold is-size-2">aipro</p>
             </div>
-        
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a @click="${this._onNavbarBurgerClick}" role="button" aria-expanded="true" class="navbar-burger" aria-label="menu" data-target="menu">
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
               <span aria-hidden="true"></span>
             </a>
           </div>
         
-          <div id="navbarBasicExample" class="navbar-menu">
+          <div id="menu" class="navbar-menu">
             <div class="navbar-end has-text-weight-bold is-size-5">
               ${this.menuItems.map(m=>
                 html`
@@ -64,6 +62,14 @@ class Header extends BaseElement {
     `;
   }
 
+  _toggleMenu(){
+    const navbarBurger = this.shadowRoot.querySelector('.navbar-burger');
+    const menu = this.shadowRoot.getElementById('menu');
+
+    navbarBurger.classList.toggle('is-active');
+    menu.classList.toggle('is-active');
+  }
+
   _onMenuItemClick(e){
     e.preventDefault();
     e.stopPropagation();
@@ -72,11 +78,17 @@ class Header extends BaseElement {
     const oldURL = location.href
     const newURL = target.href
 
+    this._toggleMenu()
+
     if (oldURL === newURL){
       window.dispatchEvent(new HashChangeEvent("hashchange", { newURL, oldURL }))
     }
 
     location.hash = target.hash
+  }
+
+  _onNavbarBurgerClick(e){
+    this._toggleMenu()
   }
 
 }
