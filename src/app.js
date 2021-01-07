@@ -17,10 +17,11 @@ class App extends BaseElement {
         const shadowRoot = this.shadowRoot
         
         window.addEventListener('hashchange', function () {
-            const hash = location.hash;
-            const el = shadowRoot.querySelector(`${hash}`);
-            if (el)
+            const hash = location.hash.replace('#', '');
+            if (hash){
+                const el = shadowRoot.querySelector(`#${hash}`);
                 el.scrollIntoView();
+            }
         }, false);
 
     }

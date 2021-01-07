@@ -13,3 +13,7 @@ a.navbar-item:visited {
 a.navbar-item:hover {
     color: $link
 }
+
+.navbar-burger:hover {
+    background-color: transparent;
+}
