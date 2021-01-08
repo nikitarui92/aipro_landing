@@ -20,15 +20,15 @@ class Header extends BaseElement {
 
     this.menuItems = [
       {
-        text: 'Проекты 🧠',
+        text: 'Проекты',
         href: '#projects'
       },
       {
-        text: 'Команда 💪',
+        text: 'Команда',
         href: '#team'
       },
       {
-        text: 'Контакты 📞',
+        text: 'Контакты',
         href: '#contact'
       }
     ]
@@ -36,7 +36,7 @@ class Header extends BaseElement {
 
   render() {
     return html`
-        <nav class="navbar is-transparent is-spaced has-shadow" role="navigation" aria-label="main navigation">
+        <nav class="navbar is-transparent has-shadow" role="navigation" aria-label="main navigation">
           <div class="navbar-brand">
             <a href="#" id="logo" class="navbar-item has-text-weight-bold is-size-2">aipro</a>
             <a @click="${this._onNavbarBurgerClick}" role="button" aria-expanded="true" class="navbar-burger" aria-label="menu" data-target="menu">

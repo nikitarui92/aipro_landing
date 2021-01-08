@@ -9,6 +9,7 @@ import './components/team'
 import './components/blackbox'
 import './components/contact'
 import './components/steps'
+import './components/tools'
 
 class App extends BaseElement {
 
@@ -33,7 +34,8 @@ class App extends BaseElement {
         <l-steps id="steps"></l-steps>
         <l-projects id="projects"></l-projects>
         <l-team id="team"></l-team>
-        <l-blackbox></l-blackbox>
+        <!-- <l-blackbox></l-blackbox> -->
+        <l-tools></l-tools>
         <l-contact id="contact"></l-contact>
         `
     }
