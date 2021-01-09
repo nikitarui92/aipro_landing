@@ -12,19 +12,19 @@ class Team extends BaseElement {
             {
                 fullname: 'Никита Захаров',
                 img: './img/niki-card.jpg',
-                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
+                desc: 'ML Engineering | Software Development | Data Analyst',
                 link: '@nikitarui'
             },
             {
                 fullname: 'Максим Исаеев',
                 img: './img/max-card.jpg',
-                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
+                desc: 'Data Mining | Software Development | ML Enthusiast',
                 link: '@undefhero'
             },
             {
                 fullname: 'Доналд Трамп',
                 img: './img/max-card.jpg',
-                desc: 'Силовое поле, как можно показать с помощью не совсем тривиальных вычислений, расщепляет межатомный солитон.',
+                desc: 'Business Analyst Consultant',
                 link: '@trump'
             }
         ]
@@ -45,7 +45,7 @@ class Team extends BaseElement {
                     <div class="columns">
                         ${this.cards.map(c => html`
                         <div class="column">
-                            <l-card link="${c.link}" img="${c.img}" desc="${c.desc}" fullname="${c.fullname}"></l-card>
+                            <l-card img="${c.img}" desc="${c.desc}" fullname="${c.fullname}"></l-card>
                         </div>
                         `)}
                     </div>

@@ -49,6 +49,11 @@ class Steps extends BaseElement {
                         </li>
                     </ul>
                 </div>
+                <!-- <div class="column has-text-right">
+                    <h1 class="title has-text-white">
+                        Wbfnnf
+                    </h1>
+                </div> -->
             </div>
         </section>
     `;
