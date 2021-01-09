@@ -9,7 +9,7 @@ class Tools extends BaseElement {
             super.styles,
             css`
                 .image {
-                    width: 50%;
+                    width: 200px;
                     margin: auto;
                 }
             `
@@ -32,7 +32,7 @@ class Tools extends BaseElement {
             <div class="hero-body">
                 <div class="columns is-multiline is-centered is-vcentered">
                     ${this.logos.map(l => html`
-                    <div class="column">
+                    <div class="column p-6">
                         <figure class="image">
                             <img src="${l}">
                         </figure>
