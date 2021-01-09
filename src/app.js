@@ -15,28 +15,24 @@ class App extends BaseElement {
 
     constructor() {
         super();
-        const shadowRoot = this.shadowRoot
-        
         window.addEventListener('hashchange', function () {
-            const hash = location.hash.replace('#', '');
-            if (hash){
-                const el = shadowRoot.querySelector(`#${hash}`);
+            const id = location.hash.replace('#', '');
+            if (id){
+                const el = document.getElementById(id);
                 el.scrollIntoView();
             }
         }, false);
-
     }
 
     render() {
         return html`
-        <l-header></l-header>
-        <l-main id="main"></l-main>
-        <l-steps id="steps"></l-steps>
-        <l-projects id="projects"></l-projects>
-        <l-team id="team"></l-team>
-        <!-- <l-blackbox></l-blackbox> -->
-        <l-tools></l-tools>
-        <l-contact id="contact"></l-contact>
+            <l-header></l-header>
+            <l-main id="main"></l-main>
+            <l-steps id="steps"></l-steps>
+            <l-projects id="projects"></l-projects>
+            <l-team id="team"></l-team>
+            <l-tools></l-tools>
+            <l-contact id="contact"></l-contact>
         `
     }
 

@@ -1,10 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
 
-html {
-  font-family: Nunito, sans-serif;
+$card-radius: 1.5rem;
+$link: #2a9d8f;
+$family-sans-serif: "Nunito", sans-serif;
+
+@import "~bulma/bulma";
+@import "~bulma-steps-component/bulma-steps.sass";
+
+a.navbar-item:visited {
+    color: $text
 }
 
-body {
-    margin: 0;
+a.navbar-item:hover {
+    color: $link
+}
+
+.navbar-burger:hover {
+    background-color: transparent;
+}
+
+#logo {
+  color: $link;
 }

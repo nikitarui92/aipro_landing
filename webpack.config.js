@@ -32,6 +32,13 @@ const assets = [
   }
 ];
 
+const fa = [
+  {
+    from: './node_modules/@fortawesome/fontawesome-free/css',
+    to: 'vendor/@fortawesome/fontawesome-free/css'
+  }
+]
+
 const plugins = [
   new CleanWebpackPlugin(),
   new webpack.ProgressPlugin(),
@@ -49,6 +56,7 @@ const plugins = [
       patterns: [
         ...polyfills,
         ...assets,
+        ...fa
       ],
     },
   ),

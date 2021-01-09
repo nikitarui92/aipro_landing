@@ -4,20 +4,8 @@ import { BaseElement } from '../base-element'
 
 class Header extends BaseElement {
 
-  static get styles(){
-    return [
-      super.styles,
-      css`
-        #logo {
-          color: #2a9d8f;
-        }
-      `
-    ]
-  }
-
   constructor(){
     super()
-
     this.menuItems = [
       {
         text: 'Проекты',
@@ -61,8 +49,8 @@ class Header extends BaseElement {
   }
 
   _toggleMenu(){
-    const navbarBurger = this.shadowRoot.querySelector('.navbar-burger');
-    const menu = this.shadowRoot.getElementById('menu');
+    const navbarBurger = document.querySelector('.navbar-burger');
+    const menu = document.getElementById('menu');
 
     navbarBurger.classList.toggle('is-active');
     menu.classList.toggle('is-active');
