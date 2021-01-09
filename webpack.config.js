@@ -40,7 +40,10 @@ const fa = [
 ]
 
 const plugins = [
-  new CleanWebpackPlugin(),
+  new CleanWebpackPlugin({
+    verbose: true,
+    cleanOnceBeforeBuildPatterns: ["**/*", "!CNAME"]
+  }),
   new webpack.ProgressPlugin(),
   new HtmlWebpackPlugin({
     filename: 'index.html',
