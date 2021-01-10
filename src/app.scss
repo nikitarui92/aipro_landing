@@ -4,7 +4,13 @@
 $link: #2a9d8f;
 $family-sans-serif: "Nunito", sans-serif;
 
+html {scroll-behavior: smooth;}
+
 @import "~bulma/bulma";
+
+$steps-completed-color: #FFDD57;
+$steps-active-color: $grey-lighter;
+
 @import "~bulma-steps-component/bulma-steps.sass";
 
 a.navbar-item:visited {
@@ -21,4 +27,9 @@ a.navbar-item:hover {
 
 #logo {
   color: $link;
+}
+
+l-tools .image {
+    width: 200px;
+    margin: auto;
 }

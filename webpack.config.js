@@ -36,6 +36,10 @@ const fa = [
   {
     from: './node_modules/@fortawesome/fontawesome-free/css',
     to: 'vendor/@fortawesome/fontawesome-free/css'
+  },
+  {
+    from: './node_modules/@fortawesome/fontawesome-free/webfonts',
+    to: 'vendor/@fortawesome/fontawesome-free/webfonts'
   }
 ]
 

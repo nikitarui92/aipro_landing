@@ -15,13 +15,15 @@ class App extends BaseElement {
 
     constructor() {
         super();
-        window.addEventListener('hashchange', function () {
+
+        window.onhashchange = function (e) {
             const id = location.hash.replace('#', '');
-            if (id){
+            if (id) {
                 const el = document.getElementById(id);
                 el.scrollIntoView();
             }
-        }, false);
+        }
+
     }
 
     render() {

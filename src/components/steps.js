@@ -16,8 +16,8 @@ class Steps extends BaseElement {
             </div>
             <div class="hero-body has-text-white">
                 <div class="container">
-                    <ul class="steps has-content-centered">
-                        <li class="steps-segment is-active">
+                    <ul class="steps is-balanced has-content-centered">
+                        <li class="steps-segment">
                             <span class="steps-marker is-warning">
                                 <span class="icon">
                                     <i class="fas fa-rocket"></i>
@@ -28,7 +28,7 @@ class Steps extends BaseElement {
                                 <p>Вы приходите к нам с проблемой, мы вместе находим решение</p>
                             </div>
                         </li>
-                        <li class="steps-segment is-active">
+                        <li class="steps-segment">
                             <span class="steps-marker">
                                 <span class="icon">
                                     <i class="fas fa-database"></i>
@@ -39,7 +39,7 @@ class Steps extends BaseElement {
                                 <p>Мы используем открытые данные или собираем свои </p>
                             </div>
                         </li>
-                        <li class="steps-segment is-active">
+                        <li class="steps-segment">
                             <span class="steps-marker">
                                 <span class="icon">
                                     <i class="fas fa-laptop-code"></i>
@@ -51,7 +51,7 @@ class Steps extends BaseElement {
                                     работать за Вас </p>
                             </div>
                         </li>
-                        <li class="steps-segment is-active">
+                        <li class="steps-segment">
                             <span class="steps-marker">
                                 <span class="icon">
                                     <i class="fa fa-check"></i>

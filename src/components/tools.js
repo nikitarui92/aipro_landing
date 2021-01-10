@@ -4,18 +4,6 @@ import { BaseElement } from '../base-element'
 
 class Tools extends BaseElement {
 
-    static get styles() {
-        return [
-            super.styles,
-            css`
-                .image {
-                    width: 200px;
-                    margin: auto;
-                }
-            `
-        ]
-    }
-
     constructor() {
         super()
         this.logos = [

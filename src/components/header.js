@@ -59,18 +59,17 @@ class Header extends BaseElement {
   _onMenuItemClick(e){
     e.preventDefault();
     e.stopPropagation();
+
+    this._toggleMenu()
     
     const target = e.currentTarget
     const oldURL = location.href
     const newURL = target.href
 
-    this._toggleMenu()
+    history.replaceState(null, '', target.hash)
 
-    if (oldURL === newURL){
-      window.dispatchEvent(new HashChangeEvent("hashchange", { newURL, oldURL }))
-    }
+    window.dispatchEvent(new HashChangeEvent("hashchange", { newURL, oldURL }))
 
-    location.hash = target.hash
   }
 
   _onNavbarBurgerClick(e){
