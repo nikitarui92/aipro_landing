@@ -10,7 +10,9 @@ class Contact extends BaseElement {
 
     render() {
         return html`
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+            integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+            crossorigin="anonymous" />
         <section class="hero">
             <div class="hero-body">
                 <div class="container">
@@ -21,17 +23,19 @@ class Contact extends BaseElement {
                             </figure>
                         </div>
                         <div class="column has-text-right">
-                            <h1 class="title">
-                                Связаться с нами
-                            </h1>
-                            <h2 class="subtitle is-size-3">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                                <a href="mailto:webmaster@example.com">mail.com</a>
-                            </h2>
-                            <h2 class="subtitle is-size-3 ">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <a href="tel:89111571487">79111571487</a>
-                            </h2>
+                            <div class="container">
+                                <h1 class="title is-spaced">
+                                    Связаться с нами
+                                </h1>
+                                <h2 class="subtitle is-size-3">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <a href="mailto:hello@ai-pro.space">hello@ai-pro.space</a>
+                                </h2>
+                                <h2 class="subtitle is-size-3 ">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <a href="tel:+79111571487">+7 (911) 1571487</a>
+                                </h2>
+                            </div>
                         </div>
                     </div>
                 </div>
