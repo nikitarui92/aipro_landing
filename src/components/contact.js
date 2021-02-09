@@ -31,10 +31,10 @@ class Contact extends BaseElement {
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     <a href="mailto:hello@ai-pro.space">hello@ai-pro.space</a>
                                 </h2>
-                                <h2 class="subtitle is-size-3 ">
+                                <!-- <h2 class="subtitle is-size-3 ">
                                     <i class="fa fa-phone" aria-hidden="true"></i>
                                     <a href="tel:+79111571487">+7 (911) 1571487</a>
-                                </h2>
+                                </h2> -->
                             </div>
                         </div>
                     </div>
