@@ -21,12 +21,12 @@ class Team extends BaseElement {
                 desc: 'Data Mining | Software Development | ML Enthusiast',
                 link: '@undefhero'
             },
-            {
-                fullname: 'Доналд Трамп',
-                img: './img/max-card.jpg',
-                desc: 'Business Analyst Consultant',
-                link: '@trump'
-            }
+            // {
+            //     fullname: 'Доналд Трамп',
+            //     img: './img/max-card.jpg',
+            //     desc: 'Business Analyst Consultant',
+            //     link: '@trump'
+            // }
         ]
     }
 
